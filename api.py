@@ -71,9 +71,9 @@ class AudioList(Resource):
         if audioFileType == 'song':
             validationSchema = AudioMetaSchema(only=("name", "duration"))
         elif audioFileType == 'podcast':
-            validationSchema = AudioMetaSchema(only=("name", "host", "duration"))
+            validationSchema = AudioMetaSchema(only=("name", "host", "participants", "duration"))
         elif audioFileType == 'audiobook':
-            validationSchema = AudioMetaSchema(only=("title", "author", "narrator", "duration", "participants"))
+            validationSchema = AudioMetaSchema(only=("title", "author", "narrator", "duration"))
         else:
             return "Invalid audio type ", http.client.BAD_REQUEST
 
@@ -126,7 +126,7 @@ class Audio(Resource):
         elif audioFileType == 'podcast':
             validationSchema = AudioMetaSchema(only=("name", "host", "participants", "duration"))
         elif audioFileType == 'audiobook':
-            validationSchema = AudioMetaSchema(only=("title", "author", "narrator", "duration", "participants"))
+            validationSchema = AudioMetaSchema(only=("title", "author", "narrator", "duration"))
         else:
             return "Invalid audio type ", http.client.BAD_REQUEST
 
