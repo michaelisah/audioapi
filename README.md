@@ -23,6 +23,9 @@ This will start the application on port 5000
 
 Swagger-UI can be used to test the application.
 
+<img width="919" alt="Screen Shot" src="https://user-images.githubusercontent.com/17323570/111064077-5892e880-84b2-11eb-9b62-aeba9a32c051.png">
+
+
 The server will start at <http://localhost:5000>.
 
 **audioFileMetadata** for creating a **song**
