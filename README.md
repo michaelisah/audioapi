@@ -4,7 +4,7 @@
 Go inside the project folder and execute the below commands.
 
 ```
-sudo pip install virtualenv 
+pip install virtualenv 
 virtualenv venv 
 source venv/bin/activate
 pip install -r requirements.txt
@@ -52,6 +52,6 @@ The server will start at <http://localhost:5000>.
   "title": "Michael",
   "author": "Michael",
   "narrator": "Michael Douglas",
-  "duration": 900,
+  "duration": 900
 }
 ```
